@@ -9,12 +9,12 @@ A plugin for [Craft](http://craftcms.com) that extends the functionality of [Twi
 
 ## Usage
 
-#### Functions
-- lipsum
-- gist
-- pastebin
+### Functions
+- [lipsum](docs/functions.md#lipsum-paragraphs5-htmltrue-min20-max100-)
+- [gist](docs/functions.md#gist-id-filenull-)
+- [pastebin](docs/functions.md#pastebin)
 
-#### Filters
+### Filters
 - center
 - filesizeformat
 - markdown
@@ -32,6 +32,6 @@ A plugin for [Craft](http://craftcms.com) that extends the functionality of [Twi
 - titleize
 - underscore
 
-#### Tags
+### Tags
 - unless
 - less
