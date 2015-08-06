@@ -10,6 +10,12 @@ The goal of this project is to deliver helpful templating functionality in a sin
 {% endunless %}
 
 There’s {{ entries|length }} {{ 'entry' | pluralize(entries|length) }}!
+
+<div class="bg-img-{{ asset.id | md5 }}"></div>
+
+{{ gist(bb45340bc4eda4c7d932, 'general.php') }}
+
+{{ craft.request.segment(4) | humanize }}
 ```
 
 ## Installation
