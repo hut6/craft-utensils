@@ -1,17 +1,14 @@
 # Filters
 
-- [General](#general)
+- [Cryptographic](#cryptographic)
+- [Date](#date)
 - [Inflection](#inflection)
+- [Internationalization](#internationalization)
+- [Text](#text)
 
+<!-- ************************************************************ -->
 
-## General
-
-#### center( width=80 )
-Centers the value in a field of a given width.
-```jinja
-{{ 'middle' | center(40) }}
-{# '                 middle                 ' #}
-```
+## Cryptographic
 
 #### md5
 Converts a string to an md5 hash.
@@ -34,6 +31,18 @@ Converts a string to an sha512 hash.
 {# '2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae' #}
 ```
 
+<!-- ************************************************************ -->
+
+## Date
+
+#### time_diff
+Use the `time_diff` filter to render the difference between a date and now.
+```jinja
+{{ entry.postDate | time_diff }}
+{# '2 days ago' #}
+```
+
+<!-- ************************************************************ -->
 
 ## Inflection
 
@@ -109,4 +118,54 @@ Converts a string to the singular form.
 ```jinja
 {{ 'FooBar' | underscore }}
 {# 'foo_bar' #}
+```
+
+<!-- ************************************************************ -->
+
+## Internationalization
+
+#### localizedcurrency
+_Needs documentation_
+
+#### localizeddate
+_Needs documentation_
+
+#### localizednumber
+_Needs documentation_
+
+<!-- ************************************************************ -->
+
+## Text
+
+#### center( width=80 )
+Centers the value in a field of a given width.
+```jinja
+{{ 'middle' | center(40) }}
+{# '                 middle                 ' #}
+```
+
+#### truncate( length=30, preserve=false, separator='...' )
+Use the `truncate` filter to cut off a string after limit is reached.
+```jinja
+{{ "Hello World!" | truncate(5) }}
+{# 'Hello...' #}
+
+{{ "Hello World!" | truncate(7, true) }}
+{# 'Hello World!' #}
+
+{{ "Hello World!" | truncate(7, false, "??") }}
+{# 'Hello W??' #}
+```
+
+#### wordwrap( length=80, separator="\n" )
+Use the `wordwrap` filter to split your text in lines with equal length.
+```jinja
+{{ "Lorem ipsum dolor sit amet, consectetur adipiscing" | wordwrap(10) }}
+```
+```
+Lorem ipsu
+m dolor si
+t amet, co
+nsectetur
+adipiscing
 ```
