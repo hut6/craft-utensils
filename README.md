@@ -2,12 +2,22 @@
 
 A plugin for [Craft](http://craftcms.com) that extends the functionality of [Twig](http://twig.sensiolabs.org/).
 
+```jinja
+{% unless currentUser.admin %}
+  {% redirect 'login' %}
+{% endunless %}
+
+There’s {{ entries|length }} {{ 'entry' | pluralize(entries|length) }}!
+```
+
 ## Installation
 
 1. Copy the `utensils/` folder into `craft/plugins/`
 2. Go to Settings → Plugins and click the “Install” button next to “Utensils”
 
 ## Usage
+
+There’s far too much to document on a single page. Have a look at the [Functions](docs/functions.md), [Filters](docs/filters.md), and [Tags](docs/tags.md) documentation for more.
 
 ### Functions
 - [lipsum](docs/functions.md#lipsum-paragraphs5-htmltrue-min20-max100-)
