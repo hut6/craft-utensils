@@ -36,9 +36,9 @@ class UtensilsPlugin extends BasePlugin
 	{
 		return array(
 			new \Twig_Extensions_Extension_Text(),
-			new \Twig_Extensions_Extension_I18n(),
+			// new \Twig_Extensions_Extension_I18n(),
 			new \Twig_Extensions_Extension_Intl(),
-			new \Twig_Extensions_Extension_Array(),
+			// new \Twig_Extensions_Extension_Array(),
 			new \Twig_Extensions_Extension_Date(),
 
 			new \KzykHys\TwigExtensions\Extension\Core(),
