@@ -13,13 +13,6 @@ Centers the value in a field of a given width.
 {# '                 middle                 ' #}
 ```
 
-#### markdown
-Transform markdown into HTML. Markdown is parsed using [kzykhys/ciconia](https://github.com/kzykhys/ciconia).
-```jinja
-{{ '# Headline' | markdown }}
-{# '<h1>Headline</h1>' #}
-```
-
 #### md5
 Converts a string to an md5 hash.
 ```jinja

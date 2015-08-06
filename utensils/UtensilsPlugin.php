@@ -44,7 +44,7 @@ class UtensilsPlugin extends BasePlugin
 			new \KzykHys\TwigExtensions\Extension\Core(),
 			new \KzykHys\TwigExtensions\Extension\Text(),
 			new \KzykHys\TwigExtensions\Extension\Snippet(),
-			new \KzykHys\TwigExtensions\Extension\Markdown(),
+			// new \KzykHys\TwigExtensions\Extension\Markdown(),
 			// new \KzykHys\TwigExtensions\Extension\SyntaxHighlight(),
 			new \KzykHys\TwigExtensions\Extension\Less(),
 			// new \KzykHys\TwigExtensions\Extension\Pipe(),
