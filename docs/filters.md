@@ -10,21 +10,21 @@
 
 ## Cryptographic
 
-#### md5
+### md5
 Converts a string to an md5 hash.
 ```jinja
 {{ 'foo' | md5 }}
 {# 'acbd18db4cc2f85cedef654fccc4a4d8' #}
 ```
 
-#### sha1
+### sha1
 Converts a string to an sha1 hash.
 ```jinja
 {{ 'foo' | sha1 }}
 {# '0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33' #}
 ```
 
-#### sha512
+### sha512
 Converts a string to an sha512 hash.
 ```jinja
 {{ 'foo' | sha512 }}
@@ -35,7 +35,7 @@ Converts a string to an sha512 hash.
 
 ## Date
 
-#### time_diff
+### time_diff
 Use the `time_diff` filter to render the difference between a date and now.
 ```jinja
 {{ entry.postDate | time_diff }}
@@ -46,7 +46,7 @@ Use the `time_diff` filter to render the difference between a date and now.
 
 ## Inflection
 
-#### pluralize( num=2 )
+### pluralize( num=2 )
 Converts a string to the plural form.
 ```jinja
 {{ 'result' | pluralize }}
@@ -59,28 +59,28 @@ Converts a string to the plural form.
 {# '1 result' or '2 results' #}
 ```
 
-#### singularize
+### singularize
 Converts a string to the singular form.
 ```jinja
 {{ 'cars' | singularize }}
 {# 'car' #}
 ```
 
-#### camelize
+### camelize
 <!-- no description -->
 ```jinja
 {{ 'foo_bar' | camelize }}
 {# 'FooBar' #}
 ```
 
-#### dasherize
+### dasherize
 <!-- no description -->
 ```jinja
 {{ 'foo_bar' | dasherize }}
 {# 'foo-bar' #}
 ```
 
-#### humanize
+### humanize
 <!-- no description -->
 ```jinja
 {{ 'employee_salary' | humanize }}
@@ -90,7 +90,7 @@ Converts a string to the singular form.
 {# 'Author' #}
 ```
 
-#### ordinalize
+### ordinalize
 <!-- no description -->
 ```jinja
 {{ 1 | ordinalize }}
@@ -103,7 +103,7 @@ Converts a string to the singular form.
 {# '3rd' #}
 ```
 
-#### titleize
+### titleize
 <!-- no description -->
 ```jinja
 {{ 'x-men: the last stand' | titleize }}
@@ -113,7 +113,7 @@ Converts a string to the singular form.
 {# 'Raiders Of The Lost Ark' #}
 ```
 
-#### underscore
+### underscore
 <!-- no description -->
 ```jinja
 {{ 'FooBar' | underscore }}
@@ -124,7 +124,7 @@ Converts a string to the singular form.
 
 ## Internationalization
 
-#### localizedcurrency
+### localizedcurrency
 _Needs documentation_
 
 ### localizeddate
@@ -194,21 +194,21 @@ Use the `localizeddate` filter to format dates into a localized string represent
 
 Internally, this filter uses the PHP <a href="http://php.net/manual/en/intldateformatter.create.php" target="_blank">IntlDateFormatter::create()</a> function for the date.
 
-#### localizednumber
+### localizednumber
 _Needs documentation_
 
 <!-- ************************************************************ -->
 
 ## Text
 
-#### center( width=80 )
+### center( width=80 )
 Centers the value in a field of a given width.
 ```jinja
 {{ 'middle' | center(40) }}
 {# '                 middle                 ' #}
 ```
 
-#### truncate( length=30, preserve=false, separator='...' )
+### truncate( length=30, preserve=false, separator='...' )
 Use the `truncate` filter to cut off a string after limit is reached.
 ```jinja
 {{ "Hello World!" | truncate(5) }}
@@ -221,7 +221,7 @@ Use the `truncate` filter to cut off a string after limit is reached.
 {# 'Hello W??' #}
 ```
 
-#### wordwrap( length=80, separator="\n" )
+### wordwrap( length=80, separator="\n" )
 Use the `wordwrap` filter to split your text in lines with equal length.
 ```jinja
 {{ "Lorem ipsum dolor sit amet, consectetur adipiscing" | wordwrap(10) }}

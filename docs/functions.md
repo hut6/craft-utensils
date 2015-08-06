@@ -19,6 +19,8 @@ Embeds a Github Gist.
 
 ### lipsum
 
+Generates paragraphs of [lorem ipsum](http://www.lipsum.com/) style text.
+
 | Argument     | Default | Description                          |
 | ------------ | ------- | ------------------------------------ |
 | `paragraphs` | 5       | The number of paragraphs to generate |
