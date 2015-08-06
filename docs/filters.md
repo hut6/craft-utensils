@@ -1,7 +1,7 @@
 # Filters
 
-- [General](#General)
-- [Inflection](#Inflection)
+- [General](#general)
+- [Inflection](#inflection)
 
 
 ## General
