@@ -1,0 +1,20 @@
+{
+    "name": "joshuabaker/craft-utensils",
+    "description": "A set of handy extras for use with Craft.",
+    "require": {
+        "kzykhys/ciconia": ">=1.0",
+        "kzykhys/twig-extensions": "dev-master",
+        "leafo/lessphp": ">=0.4",
+        "symfony/process": ">=2.3",
+        "twig/extensions": "^1.2",
+        "kzykhys/pygments": ">=1.0",
+        "joshuabaker/twig-inflect": "dev-master"
+    },
+    "license": "Mozilla Public License, version 2.0",
+    "authors": [
+        {
+            "name": "Josh Baker",
+            "email": "josh@joshuabaker.com"
+        }
+    ]
+}

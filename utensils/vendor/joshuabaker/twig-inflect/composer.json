@@ -1,0 +1,38 @@
+{
+    "name": "joshuabaker/twig-inflect",
+    "description": "TwigInflect is a Twig extension to transform the inflection of strings.",
+    "keywords": [
+        "twig",
+        "extension",
+        "template",
+        "string",
+        "transform",
+        "inflector",
+        "inflection",
+        "inflect",
+        "pluralize",
+        "singularize",
+        "camelize",
+        "dasherize",
+        "humanize",
+        "hyphenate",
+        "ordinalize",
+        "pascalize",
+        "titleize",
+        "underscore"
+    ],
+    "require": {
+        "icanboogie/inflector": "1.3.2"
+    },
+    "authors": [
+        {
+            "name": "Josh Baker",
+            "email": "josh@joshuabaker.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    }
+}
