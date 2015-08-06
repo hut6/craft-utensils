@@ -2,6 +2,8 @@
 
 A plugin for [Craft](http://craftcms.com) that extends the functionality of [Twig](http://twig.sensiolabs.org/).
 
+The goal of this project is to deliver helpful templating functionality in a single plugin.
+
 ```jinja
 {% unless currentUser.admin %}
   {% redirect 'login' %}
