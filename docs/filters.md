@@ -127,8 +127,72 @@ Converts a string to the singular form.
 #### localizedcurrency
 _Needs documentation_
 
-#### localizeddate
-_Needs documentation_
+### localizeddate
+
+Use the `localizeddate` filter to format dates into a localized string representating the date.
+
+```jinja
+{{ entry.postDate | localizeddate('medium', 'none', locale) }}
+{# 'Nov 13, 2012' #}
+```
+
+<table>
+  <tr>
+    <th>Argument</th>
+    <th colspan="2">Options</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td rowspan="5"><code>date_format</code></td>
+    <td><code>'none'</code></td>
+    <td>Do not include this element</td>
+    <td rowspan="5"><code>'medium'</code></td>
+    <td rowspan="5">The date format.</td>
+  </tr>
+  <tr>
+    <td><code>'short'</code></td>
+    <td>Most abbreviated style, only essential data (12/13/52 or 3:30pm)</td>
+  </tr>
+  <tr>
+    <td><code>'medium'</code></td>
+    <td>Medium style (Jan 12, 1952)</td>
+  </tr>
+  <tr>
+    <td><code>'long'</code></td>
+    <td>Long style (January 12, 1952 or 3:30:32pm)</td>
+  </tr>
+  <tr>
+    <td><code>'full'</code></td>
+    <td>Completely specified style (Tuesday, April 12, 1952 AD or 3:30:42pm PST)</td>
+  </tr>
+  <tr>
+    <td><code>time_format</code></td>
+    <td colspan="2">Same formats as listed above.</td>
+    <td><code>'medium'</code></td>
+    <td>The time format.</td>
+  </tr>
+  <tr>
+    <td><code>locale</code></td>
+    <td colspan="2">-</td>
+    <td><code>null</code></td>
+    <td>The locale used for the format. If NULL is given, Twig will use Locale::getDefault().</td>
+  </tr>
+  <tr>
+    <td><code>timezone</code></td>
+    <td colspan="2">-</td>
+    <td><code>null</code></td>
+    <td>The date timezone</td>
+  </tr>
+  <tr>
+    <td><code>format</code></td>
+    <td colspan="2">-</td>
+    <td><code>null</code></td>
+    <td>Optional pattern to use when formatting or parsing. Possible patterns are documented in the <a href="http://userguide.icu-project.org/formatparse/datetime" target="_blank">ICU user guide</a>.</td>
+  </tr>
+</table>
+
+Internally, this filter uses the PHP <a href="http://php.net/manual/en/intldateformatter.create.php" target="_blank">IntlDateFormatter::create()</a> function for the date.
 
 #### localizednumber
 _Needs documentation_
