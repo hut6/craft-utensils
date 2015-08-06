@@ -1,7 +1,14 @@
 # Functions
 
-#### gist( id, file=null )
-Embeds a gist.
+### gist
+
+Embeds a Github Gist.
+
+| Argument | Description                          |
+| -------- | ------------------------------------ |
+| `id`     | The Gist id                          |
+| `file`   | The filename (e.g. 'default.conf')   |
+
 ```jinja
 {{ gist(6316404) }}
 {# '<script src="https://gist.github.com/6316404.js"></script>' #}
@@ -10,14 +17,27 @@ Embeds a gist.
 {# '<script src="https://gist.github.com/6316404.js?file=default.conf"></script>' #}
 ```
 
-#### lipsum( paragraphs=5, html=true, min=20, max=100 )
-Generates some [lorem ipsum](http://www.lipsum.com/) for the template.
+### lipsum
+
+| Argument     | Default | Description                          |
+| ------------ | ------- | ------------------------------------ |
+| `paragraphs` | 5       | The number of paragraphs to generate |
+| `html`       | true    | HTML, or not                         |
+| `min`        | 20      | Minimum words per paragraph          |
+| `max`        | 100     | Minimum words per paragraph          |
+
 ```jinja
 {{ lipsum() }}
 ```
 
-#### pastebin()
-Embeds a pastebin.
+### pastebin
+
+Embeds a Pastebin.
+
+| Argument | Description                          |
+| -------- | ------------------------------------ |
+| `id`     | The Pastebin id                      |
+
 ```jinja
 {{ pastebin(zVeDKvz2) }}
 {# '<script src="http://pastebin.com/embed_js.php?i=zVeDKvz2"></script>' #}
