@@ -27,7 +27,6 @@ There’s far too much to document on a single page. Have a look at the [Functio
 ### Filters
 - General
   - [center](docs/filters.md#center-width80-)
-  - [filesizeformat](docs/filters.md#filesizeformat)
   - [markdown](docs/filters.md#markdown)
   - [md5](docs/filters.md#md5)
   - [sha1](docs/filters.md#sha1)

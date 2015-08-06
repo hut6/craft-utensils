@@ -13,13 +13,6 @@ Centers the value in a field of a given width.
 {# '                 middle                 ' #}
 ```
 
-#### filesizeformat
-Converts a numeric value into a human-readable file size (e.g. 26&nbsp;kB, 5.6&nbsp;MB, etc.).
-```jinja
-{{ 26000 | filesizeformat }}
-{# '26 kB' #}
-```
-
 #### markdown
 Transform markdown into HTML. Markdown is parsed using [kzykhys/ciconia](https://github.com/kzykhys/ciconia).
 ```jinja
